@@ -10,3 +10,15 @@
     margin-left: auto;
   }
 }
+
+.main-head__input {
+  border: none;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $special-blue-mid;
+  }
+}
