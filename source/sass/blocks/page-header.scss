@@ -8,13 +8,4 @@
   display: block;
   margin-left: 30px;
   margin-bottom: 20px;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
