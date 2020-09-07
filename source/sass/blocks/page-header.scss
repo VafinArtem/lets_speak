@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: min-content 1fr;
   padding-top: 24px;
+  border-right: 1px solid $special-blue-mid;
 }
 
 .page-header__logo {
