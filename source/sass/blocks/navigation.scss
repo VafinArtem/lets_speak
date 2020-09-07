@@ -1,5 +1,12 @@
+.navigation {
+  height: 100%;
+}
+
 .navigation__list {
+  display: flex;
+  flex-direction: column;
   @include list-none;
+  height: 100%;
 }
 
 .navigation__item {
@@ -8,6 +15,10 @@
   width: 100%;
   height: 60px;
   padding-left: 62px;
+
+  &:last-child {
+    margin-top: auto;
+  }
 
   &--active {
     background-color: $special-blue-light;
