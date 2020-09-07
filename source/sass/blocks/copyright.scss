@@ -5,3 +5,17 @@
   color: $basic-white;
   opacity: 0.5;
 }
+
+.copyright__link {
+  color: $basic-white;
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
