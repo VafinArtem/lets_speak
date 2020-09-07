@@ -6,8 +6,12 @@
 }
 
 .main-head__item {
+  padding: 0 30px;
   &--personel {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
+    border-right: 1px solid $special-blue-light-2;
   }
 }
 
