@@ -1,0 +1,9 @@
+.training {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  column-gap: 20px;
+}
+
+.training__video {
+  grid-column: 1/2;
+}
