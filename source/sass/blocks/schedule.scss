@@ -1,4 +1,47 @@
 .schedule__list {
+  @include list-none;
   display: grid;
   grid-template-columns: 260px 260px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.schedule__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  padding: 20px 30px;
+  background-color: $basic-white;
+  box-shadow: 0px 1px 4px rgba(60, 66, 95, 0.2);
+  border-radius: 4px;
+}
+
+.schedule__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.shedule__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.shedule__time {
+  margin: 0;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: $special-marine;
+}
+
+.shedule__link {
+  align-self: flex-end;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-blue;
 }
