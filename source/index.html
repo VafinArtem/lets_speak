@@ -61,10 +61,17 @@
 
   <main class="page-main">
     <header class="page-main__head main-head">
-      <div class="main-head__item main-head__item--search">
-        <form class="main-head__search" action="https://echo.htmlacademy.ru" method="GET">
-          <label for="search" class="visually-hidden">Поиск</label>
-          <input class="main-head__input" type="text" name="search" id="search" placeholder="Поиск...">
+      <div class="main-head__item main-head__item--search search">
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
+          <button class="search__btn" type="submit">
+            <svg class="search__img" width="22" height="22">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <label for="search" class="visually-hidden">
+
+            <span class="visually-hidden">Поиск</span></label>
+          <input class="search__input" type="text" name="search" id="search" placeholder="Поиск...">
         </form>
       </div>
       <div class="main-head__item main-head__item--personel personel">

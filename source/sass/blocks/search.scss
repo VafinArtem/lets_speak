@@ -1,0 +1,30 @@
+.search__form {
+  display: flex;
+}
+
+.search__input {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: $special-blue-mid;
+  border: none;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $special-blue-mid;
+  }
+}
+
+.search__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 8px;
+  border: none;
+  background-color: transparent;
+}
