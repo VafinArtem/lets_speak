@@ -7,6 +7,7 @@
 .slider__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   padding: 60px;
   background-image: url("../../img/bigben.jpg");
@@ -24,6 +25,7 @@
 }
 
 .slider__text {
+  width: 483px;
   margin: 0;
   font-size: 18px;
   line-height: 28px;
@@ -37,6 +39,9 @@
   width: 167px;
   height: 42px;
   padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
   color: $basic-white;
   border-radius: 4px;
   background-color: $special-orange;
