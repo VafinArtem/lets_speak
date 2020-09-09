@@ -36,7 +36,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $special-blue-light;
   }
 }

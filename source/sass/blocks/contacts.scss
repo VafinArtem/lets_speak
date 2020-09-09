@@ -39,6 +39,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-blue-dark;
+
+  &:hover,
+  &:focus {
+    font-weight: 500;
+  }
 }
 
 .contacts__desc {
