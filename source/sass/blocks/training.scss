@@ -5,11 +5,49 @@
 }
 
 .training__video {
+  position: relative;
   grid-column: 1/2;
+}
 
-  & .training__img {
-    box-shadow: 0px 1px 4px rgba(60, 66, 95, 0.2);
-    border-radius: 4px;
+.training__bg {
+  display: block;
+  box-shadow: 0px 1px 4px rgba(60, 66, 95, 0.2);
+  border-radius: 4px;
+}
+
+.training__btn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-left: 8px;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-right: -32px;
+  background-color: $special-blue;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    margin-right: -43px;
+    margin-top: -43px;
+    width: 86px;
+    height: 86px;
+  }
+
+  &:active {
+    margin-right: -25px;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
   }
 }
 
@@ -54,7 +92,7 @@
       border-radius: 0 9px 9px 0;
     }
 
-    & .training__box {
+    & .training__link {
       background-color: $special-blue;
     }
 
@@ -73,10 +111,11 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $special-blue-light;
 
-    & .training__box {
+    & .training__link {
       background-color: $special-blue;
     }
 
@@ -84,10 +123,6 @@
       fill: $basic-white;
     }
   }
-
-  // &:last-child {
-  //   padding-bottom: 2px;
-  // }
 }
 
 .training__inner {
@@ -97,7 +132,8 @@
   column-gap: 12px;
 }
 
-.training__box {
+.training__link {
+  display: block;
   grid-row: 1/-1;
   width: 32px;
   height: 32px;
@@ -111,8 +147,6 @@
   display: block;
   &--play {
     fill: $special-blue;
-    width: 12px;
-    height: 12px;
   }
 }
 
