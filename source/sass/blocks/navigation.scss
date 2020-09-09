@@ -3,9 +3,10 @@
 }
 
 .navigation__list {
+  @include list-none;
+
   display: flex;
   flex-direction: column;
-  @include list-none;
   height: 100%;
   padding-bottom: 10px;
 }
